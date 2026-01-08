@@ -4,7 +4,8 @@
   "private": true,
   "workspaces": [
     "vite",
-    "vite-vanilla-library-template"
+    "vite-vanilla-library-template",
+    "vite-react-component-library-starter"
   ]
 }
 
