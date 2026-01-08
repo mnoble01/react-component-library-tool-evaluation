@@ -5,7 +5,8 @@
   "workspaces": [
     "vite",
     "vite-vanilla-library-template",
-    "vite-react-component-library-starter"
+    "vite-react-component-library-starter",
+    "ts-lib-starter"
   ]
 }
 
