@@ -1,3 +1,5 @@
+Source: https://github.com/hywax/vite-vanilla-library-template
+
 # Vite Vanilla Library Template
 
 Template for creating a library with a fully customized environment.

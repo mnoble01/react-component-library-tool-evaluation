@@ -1,3 +1,5 @@
+Source: https://github.com/rayyamhk/vite-react-component-library-starter
+
 # Vite React Component Library Starter
 
 This is a starter template for creating React component libraries using Vite. It includes a robust set of features to help you develop, test, and build your library efficiently.
