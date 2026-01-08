@@ -6,7 +6,8 @@
     "vite",
     "vite-vanilla-library-template",
     "vite-react-component-library-starter",
-    "ts-lib-starter"
+    "ts-lib-starter",
+    "parcel"
   ]
 }
 
