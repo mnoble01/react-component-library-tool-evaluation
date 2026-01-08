@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "vite"
+    "vite",
+    "vite-vanilla-library-template"
   ]
 }
 
