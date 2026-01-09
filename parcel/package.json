@@ -1,4 +1,7 @@
 {
   "name": "parcel-react-component-library",
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  }
 }
