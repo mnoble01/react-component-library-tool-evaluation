@@ -3,10 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "vite",
-    "vite-vanilla-library-template",
-    "vite-react-component-library-starter",
-    "ts-lib-starter",
+    "vite/*",
+    "rsbuild/*",
     "parcel"
   ],
   "volta": {
