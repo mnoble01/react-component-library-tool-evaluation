@@ -72,3 +72,22 @@ When running `npm run dev`, file changes & subsequent file changes are all logge
 10:44:35 AM [vite] (client) hmr update /src/App.tsx (x2)
 10:44:37 AM [vite] (client) hmr update /src/App.tsx (x3)
 ```
+
+Generated `dist` file:
+```
+const LibraryName = "react-component-library-rolldown";
+export { LibraryName };
+./dist/vite-component-library-rolldown.js (END)
+```
+Compare to a Parcel generated file:
+```
+function $parcel$export(e, n, v, s) {
+  Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
+}
+
+$parcel$export(module.exports, "libraryName", () => $aafb17210421ec67$export$71f8208cb849118a);
+const $aafb17210421ec67$export$71f8208cb849118a = 'parcel-react-component-library';
+
+
+//# sourceMappingURL=main.js.map
+```
