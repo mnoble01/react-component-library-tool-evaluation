@@ -1,0 +1,1 @@
+export const libraryName = 'parcel-react-component-library';
