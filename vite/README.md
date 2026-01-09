@@ -54,7 +54,7 @@ found 0 vulnerabilities
 ## Build
 `npm run dev`
 
-### Notes
+# Notes
 `vite-component-library` was created without Rolldown.
 
 `vite-component-library-rolldown` was created with experimental Rolldown option.

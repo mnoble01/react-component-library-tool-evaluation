@@ -9,7 +9,7 @@ https://parceljs.org/getting-started/library/
 `npx parcel build`
 
 
-### Notes: 
+# Notes: 
 
 While Parcel has a [React recipe](https://parceljs.org/recipes/react/) for apps, it does not have the same for a React library.
 
