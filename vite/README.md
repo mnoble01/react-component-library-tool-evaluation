@@ -53,4 +53,5 @@ found 0 vulnerabilities
 
 ### Notes
 `vite-component-library` was created without Rolldown.
-`vite-component-library-rolldown was created with experimental Rolldown option.
+
+`vite-component-library-rolldown` was created with experimental Rolldown option.
