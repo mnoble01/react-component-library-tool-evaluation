@@ -51,7 +51,24 @@ found 0 vulnerabilities
   ➜  press h + enter to show help
 ```
 
+## Build
+`npm run dev`
+
 ### Notes
 `vite-component-library` was created without Rolldown.
 
 `vite-component-library-rolldown` was created with experimental Rolldown option.
+
+When running `npm run dev`, the server is automatically restarted when configuration files are changed. I don't think this was true of Ember, where we have to restart the server after making server config changes.
+```
+10:41:26 AM [vite] vite.config.ts changed, restarting server...
+10:41:26 AM [vite] server restarted.
+```
+
+When running `npm run dev`, file changes & subsequent file changes are all logged so you can follow along. From what I can tell, Parcel does not do this and it's harder to know when a file has changed.
+```
+10:42:40 AM [vite] server restarted.
+10:44:27 AM [vite] (client) hmr update /src/App.tsx
+10:44:35 AM [vite] (client) hmr update /src/App.tsx (x2)
+10:44:37 AM [vite] (client) hmr update /src/App.tsx (x3)
+```

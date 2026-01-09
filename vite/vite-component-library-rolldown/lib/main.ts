@@ -1,1 +1,1 @@
-export const LibraryName = 'react-component-library-rolldown';
+export const libraryName = 'react-component-library-rolldown';
