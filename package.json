@@ -8,6 +8,8 @@
     "vite-react-component-library-starter",
     "ts-lib-starter",
     "parcel"
-  ]
+  ],
+  "volta": {
+    "node": "20.19.0"
+  }
 }
-
