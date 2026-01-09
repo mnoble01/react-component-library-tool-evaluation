@@ -1,0 +1,1 @@
+export const LibraryName = 'react-component-library-rolldown';
