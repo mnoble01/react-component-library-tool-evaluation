@@ -3,6 +3,7 @@
 
 .primary {
   background-color: brand500;
+  /* The following fails - it can't find the module */
   /* composes: primary from '@salsify/habanero/addon/components/private/button-base.css'; */
 }
 
