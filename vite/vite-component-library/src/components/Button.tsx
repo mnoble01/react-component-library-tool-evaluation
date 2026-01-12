@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styles from './Button.module.css'
-// import habaneroButtonStyles from '@salsify/habanero/components/private/button-base.css';
+// The following imports fail due to module resolution issues (no default export)
+// import habaneroButtonStyles from '@salsify/habanero/addon/components/private/button-base.css';
 // import habaneroColors from '@salsify/habanero/addon/colors.css';
 
 interface ButtonArgs {
