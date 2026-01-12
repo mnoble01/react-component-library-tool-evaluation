@@ -1,0 +1,21 @@
+@value aji300, brand500, covincho500 from '@salsify/habanero/addon/colors';
+
+
+.primary {
+  background-color: brand500;
+  /* composes: primary from '@salsify/habanero/addon/components/private/button-base.css'; */
+}
+
+.secondary {
+  background-color: white;
+  border-color: aji300;
+}
+
+.tertiary {
+  background-color: white;
+  border: none;
+}
+
+.destructive {
+  background-color: covincho500;
+}
