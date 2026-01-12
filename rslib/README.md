@@ -96,3 +96,5 @@ dist/index.js   1.2 kB   0.47 kB
 
 # Notes
 Project setup is similar to vite.
+
+No index.html file

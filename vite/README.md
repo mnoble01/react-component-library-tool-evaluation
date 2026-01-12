@@ -55,10 +55,12 @@ found 0 vulnerabilities
 `npm run dev`
 
 # Notes
+
 `vite-component-library` was created without Rolldown.
 
 `vite-component-library-rolldown` was created with experimental Rolldown option.
 
+## Setup
 When running `npm run dev`, the server is automatically restarted when configuration files are changed. I don't think this was true of Ember, where we have to restart the server after making server config changes.
 ```
 10:41:26 AM [vite] vite.config.ts changed, restarting server...
@@ -91,3 +93,7 @@ const $aafb17210421ec67$export$71f8208cb849118a = 'parcel-react-component-librar
 
 //# sourceMappingURL=main.js.map
 ```
+
+## Dev
+
+Has index.html file for a landing page. Rslib doesn't have this out of the box.
