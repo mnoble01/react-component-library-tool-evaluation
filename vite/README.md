@@ -94,54 +94,13 @@ const $aafb17210421ec67$export$71f8208cb849118a = 'parcel-react-component-librar
 //# sourceMappingURL=main.js.map
 ```
 
+Does not have Storybook setup by default (Rslib does).
 
 ## Dev
 
 Has index.html file for a landing page. Rslib doesn't have this out of the box. I think we need Rsbuild or other dev server for this.
 
 Has CSS Modules by default. Supposedly so does Rslib (needed to add env.d.ts for rslib to work with CSS Modules).
-
-### Storybook
-Does not have Storybook setup by default (Rslib does).
-
-```
-➜  vite-component-library git:(main) npx storybook@latest init                      
-
-┌  Initializing Storybook
-│
-●  Adding Storybook version 10.1.11 to your project
-│
-◇  Framework detected: react-vite
-│
-◇  What configuration should we install?
-│  Minimal: Just the essentials for component development.
-│
-◆  Storybook configuration generated
-│
-│  - Configuring ESLint plugin
-│  - Configuring main.ts
-│  - Configuring preview.ts
-│  - Adding Storybook command to package.json
-│  - Copying framework templates
-│
-◆  Dependencies added to package.json
-│
-│  Adding devDependencies:
-│  - storybook@^10.1.11
-│  - @storybook/react-vite@^10.1.11
-│  - eslint-plugin-storybook@^10.1.11
-│
-◇  Dependencies installed
-│
-◇  Storybook was successfully installed in your project!
-│
-│  To run Storybook manually, run npm run storybook. CTRL+C to stop.
-│
-│  Wanna know more about Storybook? Check out https://storybook.js.org/
-│  Having trouble or want to chat? Join us at https://discord.gg/storybook/
-│
-└ 
-```
 
 ## Testing
 No testing scripts or files were included by default during project setup. (Rslib generated these by default.)
