@@ -94,9 +94,11 @@ const $aafb17210421ec67$export$71f8208cb849118a = 'parcel-react-component-librar
 //# sourceMappingURL=main.js.map
 ```
 
+Does not have Storybook setup by default (Rslib does).
+
 ## Dev
 
-Has index.html file for a landing page. Rslib doesn't have this out of the box.
+Has index.html file for a landing page. Rslib doesn't have this out of the box. I think we need Rsbuild or other dev server for this.
 
 Has CSS Modules by default. Supposedly so does Rslib (needed to add env.d.ts for rslib to work with CSS Modules).
 
