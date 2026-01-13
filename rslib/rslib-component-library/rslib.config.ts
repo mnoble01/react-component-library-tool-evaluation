@@ -16,7 +16,11 @@ export default defineConfig({
   ],
   output: {
     target: 'web',
-    // emitCss: true, // Can't import from Button.module.css, even with this addition
+    cssModules: {
+      auto: (resource) => {
+        return resource.includes('.module.') || resource.includes('habanero');
+      },
+    },
   },
   html: {
     template: './src/index.html', // Path to your index.html file

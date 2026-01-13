@@ -1,13 +1,16 @@
 /* Module not found: */
 /* @value aji300, brand500, covincho500 from '@salsify/habanero/addon/colors'; */
-/*   ./node_modules/@rspack/core/dist/cssExtractLoader.js):
-│  ╰─▶   × Cannot read properties of undefined (reading 'brand500') */
-/* @value aji300, brand500, covincho500 from '@salsify/habanero/addon/colors.css'; */
 
+/* Needed to modify rslib.config.ts output.cssModules.auto to include habanero files. */
+@value aji300, brand500, covincho500 from '@salsify/habanero/addon/colors.css';
+
+.button {
+  border: 1px solid;
+}
 
 .primary {
   background-color: brand500;
-  /* The following fails - it can't find the module with or w/o the .css */
+  /* The following fails due to @salsify/habanero/colors being an import that Rslib cannot resolve */
   /* composes: primary from '@salsify/habanero/addon/components/private/button-base'; */
 }
 

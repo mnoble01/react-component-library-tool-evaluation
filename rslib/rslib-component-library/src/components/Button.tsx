@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import styles from './Button.module.css'
-// The following imports fail due to module resolution issues (no default export)
+// The following fails due to '@salsify/habanero/colors' being an import that Rslib cannot resolve
 // import habaneroButtonStyles from '@salsify/habanero/addon/components/private/button-base.css';
+
 // import habaneroColors from '@salsify/habanero/addon/colors.css';
 
 interface ButtonArgs {
@@ -15,7 +16,7 @@ export default function Button({ type, className }: ButtonArgs) {
   return (
     <>
       <div className={className}>
-        <button className={styles[type]} onClick={() => setCount((count) => count + 1)}>
+        <button className={`${styles['button']} ${styles[type]}`} onClick={() => setCount((count) => count + 1)}>
           {type} count is {count}
         </button>
       </div>
