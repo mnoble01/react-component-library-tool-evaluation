@@ -1,4 +1,8 @@
-@value aji300, brand500, covincho500 from '@salsify/habanero/addon/colors';
+/* Module not found: */
+/* @value aji300, brand500, covincho500 from '@salsify/habanero/addon/colors'; */
+/*   ./node_modules/@rspack/core/dist/cssExtractLoader.js):
+│  ╰─▶   × Cannot read properties of undefined (reading 'brand500') */
+/* @value aji300, brand500, covincho500 from '@salsify/habanero/addon/colors.css'; */
 
 
 .primary {
