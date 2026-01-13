@@ -97,3 +97,5 @@ const $aafb17210421ec67$export$71f8208cb849118a = 'parcel-react-component-librar
 ## Dev
 
 Has index.html file for a landing page. Rslib doesn't have this out of the box.
+
+Has CSS Modules by default. Supposedly so does Rslib.

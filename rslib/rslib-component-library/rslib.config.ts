@@ -4,7 +4,7 @@ import { defineConfig } from '@rslib/core';
 export default defineConfig({
   source: {
     entry: {
-      index: ['./src/**'],
+      index: ['./src/index.tsx'],
     },
   },
   lib: [
@@ -16,6 +16,14 @@ export default defineConfig({
   ],
   output: {
     target: 'web',
+    // emitCss: true, // Can't import from Button.module.css, even with this addition
+  },
+  html: {
+    template: './src/index.html', // Path to your index.html file
   },
   plugins: [pluginReact()],
+  server: {
+    // No luck importing from public dir once built
+    // publicDir: 'public',
+  }
 });

@@ -97,4 +97,21 @@ dist/index.js   1.2 kB   0.47 kB
 # Notes
 Project setup is similar to vite.
 
-No index.html file
+No index.html file.
+Google AI: 
+```
+No Default Index: Rslib itself is primarily a tool for building JavaScript/TypeScript libraries (outputting formats like ESM, CJS, UMD), not a static site generator. By default, it uses src/index.js or src/index.ts as the build entry point, unlike tools like Vite which use index.html as the default entry.
+```
+
+Supports CSS Modules by default (supposedly, but importing from them is not working for me atm).
+
+Uses Storybook for dev server/visual feedback.
+
+From the Rslib website:
+```
+Rslib is currently in the 0.x stage and we plan to release v1.0 after achieving the following key goals:
+
+Stabilize the final configuration and API design
+Optimize the quality of the build output
+Support bundleless mode for Vue, Solid and more frameworks
+```

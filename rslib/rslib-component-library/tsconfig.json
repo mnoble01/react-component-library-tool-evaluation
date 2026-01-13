@@ -8,7 +8,9 @@
     "isolatedModules": true,
     "resolveJsonModule": true,
     "moduleResolution": "bundler",
-    "useDefineForClassFields": true
+    "useDefineForClassFields": true,
+    // Allow importing TypeScript modules. (taken from Vite config)
+    "allowImportingTsExtensions": true
   },
   "include": ["src"]
 }
