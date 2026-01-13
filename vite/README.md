@@ -147,3 +147,32 @@ Setup was very easy, though, using a Storybook-provided recipe.
 
 ## Testing
 No testing scripts or files were included by default during project setup. (Rslib generated these by default.)
+
+```
+➜  vite-component-library git:(main) ✗ npm install -D vitest @testing-library/react @testing-library/jest-dom
+```
+
+```
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  __tests__/Button.test.tsx > Button > renders button with correct type and class name
+Error: Invalid Chai property: toBeVisible
+ ❯ __tests__/Button.test.tsx:12:18
+     10|     
+     11|     const button = screen.getByText('primary count is 0');
+     12|     expect(button).toBeVisible();
+       |                  ^
+     13|     // expect(button).toBeInTheDocument();
+     14|     // expect(button).toHaveClass('custom-button');
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+   Start at  14:36:31
+   Duration  483ms (transform 11ms, setup 0ms, import 97ms, tests 17ms, environment 283ms)
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+```
