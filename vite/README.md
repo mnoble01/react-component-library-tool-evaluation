@@ -94,13 +94,90 @@ const $aafb17210421ec67$export$71f8208cb849118a = 'parcel-react-component-librar
 //# sourceMappingURL=main.js.map
 ```
 
-Does not have Storybook setup by default (Rslib does).
 
 ## Dev
 
 Has index.html file for a landing page. Rslib doesn't have this out of the box. I think we need Rsbuild or other dev server for this.
 
 Has CSS Modules by default. Supposedly so does Rslib (needed to add env.d.ts for rslib to work with CSS Modules).
+
+### Storybook
+Does not have Storybook setup by default (Rslib does).
+
+```
+➜  vite-component-library git:(main) npx storybook@latest init
+Need to install the following packages:
+storybook@10.1.11
+Ok to proceed? (y) y
+
+
+┌  Initializing Storybook
+│
+●  Adding Storybook version 10.1.11 to your project
+│
+◇  Framework detected: react-vite
+│
+◇  New to Storybook?
+│  No: Skip onboarding & don't ask again
+│
+●  Storybook collects completely anonymous usage telemetry. We use it to shape
+│  Storybook's roadmap and prioritize features. You can learn more, including how
+│  to opt out, at https://storybook.js.org/telemetry
+│
+◇  What configuration should we install?
+│  Recommended: Component development, docs, and testing features.
+│
+◆  Storybook configuration generated
+│
+│  - Configuring ESLint plugin
+│  - Configuring main.ts
+│  - Configuring preview.ts
+│  - Adding Storybook command to package.json
+│  - Copying framework templates
+│
+◆  Dependencies added to package.json
+│
+│  Adding devDependencies:
+│  - storybook@^10.1.11
+│  - @storybook/react-vite@^10.1.11
+│  - @chromatic-com/storybook@^5.0.0
+│  - @storybook/addon-vitest@^10.1.11
+│  - @storybook/addon-a11y@^10.1.11
+│  - @storybook/addon-docs@^10.1.11
+│  - eslint-plugin-storybook@^10.1.11
+│  - vitest
+│  - playwright
+│  - @vitest/browser-playwright
+│  - @vitest/coverage-v8
+│
+◇  Dependencies installed
+│
+◆  Addons configured successfully
+│
+│  ✅ @chromatic-com/storybook
+│  ✅ @storybook/addon-vitest
+│  ✅ @storybook/addon-a11y
+│  ✅ @storybook/addon-docs
+│
+│  Playwright browser binaries are necessary for @storybook/addon-vitest. The
+│  download can take some time. If you don't want to wait, you can skip the
+│  installation and run the following command manually later:
+│  npx playwright install chromium --with-deps
+│
+◇  Do you want to install Playwright with Chromium now?
+│  Yes
+│
+◇  Playwright browser binaries installed successfully
+│
+◇  Storybook was successfully installed in your project!
+│
+│  To run Storybook manually, run npm run storybook. CTRL+C to stop.
+│
+│  Wanna know more about Storybook? Check out https://storybook.js.org/
+│  Having trouble or want to chat? Join us at https://discord.gg/storybook/
+│
+└  
+```
 
 ## Testing
 No testing scripts or files were included by default during project setup. (Rslib generated these by default.)
