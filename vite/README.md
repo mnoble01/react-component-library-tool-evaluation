@@ -104,6 +104,8 @@ Has CSS Modules by default. Supposedly so does Rslib (needed to add env.d.ts for
 ### Storybook
 Does not have Storybook setup by default (Rslib does).
 
+Setup was very easy, though, using a Storybook-provided recipe.
+
 ```
 ➜  vite-component-library git:(main) npx storybook@latest init                      
 
