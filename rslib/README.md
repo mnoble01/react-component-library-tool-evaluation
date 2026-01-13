@@ -94,6 +94,43 @@ File (cjs)      Size     Gzip
 dist/index.js   1.2 kB   0.47 kB
 ```
 
+## Testing
+Vitest runs tests in the terminal
+```
+➜  rslib-component-library git:(main) ✗ npm run test        
+
+> rslib-component-library@1.0.0 test
+> vitest run
+
+
+ RUN  v4.0.16 /Users/mnoble/dev/react-component-library/rslib/rslib-component-library
+
+ ✓ tests/index.test.tsx (1 test) 17ms
+   ✓ The button should increment its text 17ms
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  12:55:14
+   Duration  600ms (transform 56ms, setup 72ms, import 89ms, tests 17ms, environment 334ms)
+```
+
+Watching tests for changes didn't work
+```
+➜  rslib-component-library git:(main) ✗ npm run test watch
+
+> rslib-component-library@1.0.0 test
+> vitest run watch
+
+
+ RUN  v4.0.16 /Users/mnoble/dev/react-component-library/rslib/rslib-component-library
+
+No test files found, exiting with code 1
+
+filter: watch
+include: **/*.{test,spec}.?(c|m)[jt]s?(x)
+exclude:  **/node_modules/**, **/.git/**
+```
+
 # Notes
 Project setup is similar to vite.
 
@@ -103,9 +140,9 @@ Google AI:
 No Default Index: Rslib itself is primarily a tool for building JavaScript/TypeScript libraries (outputting formats like ESM, CJS, UMD), not a static site generator. By default, it uses src/index.js or src/index.ts as the build entry point, unlike tools like Vite which use index.html as the default entry.
 ```
 
-Supports CSS Modules by default (supposedly, but importing from them is not working for me atm).
+Supports CSS Modules by default (supposedly, but importing from them is not working for me atm). Update: needed to add an allowlist to allow importing from Habanero.
 
-Uses Storybook for dev server/visual feedback.
+Uses Storybook for dev server/visual feedback. No other dev server is available unless we use Rsbuild.
 
 From the Rslib website:
 ```
