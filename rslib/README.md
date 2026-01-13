@@ -95,6 +95,8 @@ dist/index.js   1.2 kB   0.47 kB
 ```
 
 ## Testing
+Testing scripts and starter file were included automatically upon generating the project. (Not so for Vite.)
+
 Vitest runs tests in the terminal
 ```
 ➜  rslib-component-library git:(main) ✗ npm run test        
